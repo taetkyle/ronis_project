@@ -1,0 +1,12 @@
+# ROS 2 build folders (NEVER push these)
+build/
+install/
+log/
+
+# VS Code heavy files
+.vscode/
+*.db
+
+# Python cache
+__pycache__/
+*.pyc
