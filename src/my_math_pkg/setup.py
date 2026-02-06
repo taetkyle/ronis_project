@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
           'path_generator = my_math_pkg.path_generator:main',
+          'new_path_generator = my_math_pkg.new_path_generator:main',
           'simple_follower = my_math_pkg.simple_follower:main',
         ],
     },

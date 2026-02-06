@@ -63,7 +63,7 @@ class SimpleFollower(Node):
             angle_error += 2.0 * math.pi
 
         # Gains
-        K_linear = 0.5
+        K_linear = 1.0
         K_angular = 1.5
 
         # <--- CHANGE 3: Create TwistStamped message
@@ -79,7 +79,7 @@ class SimpleFollower(Node):
             cmd.twist.angular.z = K_angular * angle_error
             
             # Safety Limit
-            cmd.twist.linear.x = min(cmd.twist.linear.x, 0.22)
+            cmd.twist.linear.x = min(cmd.twist.linear.x, 0.3)
         else:
             cmd.twist.linear.x = 0.0
             cmd.twist.angular.z = 0.0
