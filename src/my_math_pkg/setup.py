@@ -27,6 +27,9 @@ setup(
           'path_generator = my_math_pkg.path_generator:main',
           'new_path_generator = my_math_pkg.new_path_generator:main',
           'simple_follower = my_math_pkg.simple_follower:main',
+          'new_simple_follower = my_math_pkg.new_simple_follower:main',
+          'arrow_path_generator = my_math_pkg.arrow_path_generator:main',
+          'ball_tracker = my_math_pkg.ball_tracker:main'
         ],
     },
 )
